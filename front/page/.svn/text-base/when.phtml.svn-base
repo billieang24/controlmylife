@@ -14,9 +14,17 @@
 		<div class="clearfix somewhat">	
 			<?php foreach ($users as $user): ?>
 			<div class="info">
-				<img class="image" src="images\<?php echo $user['user_image']; ?>">
+				<img class="image" src="images\<?php //echo $user['user_image']; ?>">
 				<p class="person-info"><?php echo $user['user_name']; ?></p>
-				<p class="time-people"><?php echo $user['user_free_time']; ?></p>
+				<p class="time-people">
+					<?php 
+						if(isset($user['freetime'])){
+							foreach ($user['freetime'] as $value){
+								echo $value['freetime_start'].' to '.$value['freetime_end'].'<br/>';
+							}					
+						}
+					?>
+				</p>
 			</div>
 			<?php endforeach;?>
 		</div>
@@ -38,6 +46,5 @@
 		<br/>
 		<a href="/where"><button class="bookIt btn btn-warning">Book It!                    
 		<span class="glyphicon glyphicon-book"></span></button></a>
-		<!-- <div class="out"><?php echo $when;?></div> -->
 	</section>
 </div>

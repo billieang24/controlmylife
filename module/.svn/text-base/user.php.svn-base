@@ -19,12 +19,15 @@ class User extends Eden_Class {
 		return $this;
 	}
 	
-	public function getList($start = 0, $range = 10) {
+	public function getList($start, $end) {
 		return $this->_database
 			->search('user')
-			// ->filterByUserId(1)
-			->setStart($start)
-			->setRange($range)
+			->innerJoinOn('freetime','user_id=freetime_user')
+			->leftJoinOn('booked','booked_freetime=freetime_id')
+			->addFilter('booked_freetime is null')
+			->addFilter('(freetime_start between \''.$start.'\' and \''.$end.'\')'.
+				' and (freetime_end between \''.$start.'\' and \''.$end.'\')')
+			->setGroup('user_id')
 			->getRows();
 	}
 	

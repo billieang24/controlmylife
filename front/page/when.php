@@ -26,37 +26,17 @@ class Front_Page_When extends Front_Page {
 	public function render() {
 		print_r($_GET);
 		$userIdArray = explode(',',$_GET['users']);
-		foreach ($userIdArray as $key => $value) {
-			$users[] = front()
-						->database()
-						->search('user')
-						->addFilter('user_id='.$value)
-						->getRow();
+		foreach ($userIdArray as $value) {
+			$users[] = front()->user()->getDetail($value);
 		}
 		foreach ($users as $key => $user) {
-			$freetime = front()
-						->database()
-						->search('freetime')
-						->leftJoinOn('booked','freetime_id=booked_freetime')
-						->addFilter('freetime_user='.$user['user_id'])
-						->addFilter('booked_freetime is null')
-						->getRows();
+			$freetime = front()->freetime()->getList($user['user_id'],$_GET['start'],$_GET['end']);
 			foreach ($freetime as $value) {
+				// $this->_body['free_times'][] = $value;
 				$users[$key]['freetime'][] = $value;
 			}
 		}
-		print_r($users);
-		$this->_body['users'] = array(
-								array('user_name'=>'billie','user_id'=>1,'user_image'=>'batman.jpg','user_free_time'=>'tomorrow 6pm-8pm'),
-								array('user_name'=>'batman','user_id'=>2,'user_image'=>'batman.jpg','user_free_time'=>'tomorrow 6pm-8pm'),
-								array('user_name'=>'catwoman','user_id'=>3,'user_image'=>'batman.jpg','user_free_time'=>'tomorrow 6pm-8pm'),
-								array('user_name'=>'joker','user_id'=>4,'user_image'=>'batman.jpg','user_free_time'=>'tomorrow 6pm-8pm'),
-								array('user_name'=>'penguin','user_id'=>5,'user_image'=>'batman.jpg','user_free_time'=>'tomorrow 6pm-8pm'),
-								array('user_name'=>'robin','user_id'=>6,'user_image'=>'batman.jpg','user_free_time'=>'tomorrow 6pm-8pm'),
-								array('user_name'=>'joker','user_id'=>7,'user_image'=>'batman.jpg','user_free_time'=>'tomorrow 6pm-8pm'),
-								array('user_name'=>'penguin','user_id'=>8,'user_image'=>'batman.jpg','user_free_time'=>'tomorrow 6pm-8pm'),
-								array('user_name'=>'robin','user_id'=>9,'user_image'=>'batman.jpg','user_free_time'=>'tomorrow 6pm-8pm')
-								);
+		$this->_body['users'] = $users;
 
 		$this->_body['free_times'] = array(
 								'Monday'=>array('6am-8am','6pm-8pm'),

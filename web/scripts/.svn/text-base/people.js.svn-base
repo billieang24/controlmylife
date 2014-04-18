@@ -29,6 +29,9 @@ jQuery(function($) {
 	$(document).ready(function(e){
 		sizeAdjust('.whole-people');
 	});
+	$("select[name='date-range']").click(function(e){
+		$(this).parent().submit();
+	});
 	$('.btn-next-people').click(function(e){
 		$("input[name='users']").attr('value',
 			$("input[name='users']").attr('value').substring(0,

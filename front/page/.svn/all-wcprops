@@ -1,19 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 33
-/cml/!svn/ver/53/trunk/front/page
-END
-people.phtml
-K 25
-svn:wc:ra_dav:version-url
-V 46
-/cml/!svn/ver/54/trunk/front/page/people.phtml
-END
-people.php
-K 25
-svn:wc:ra_dav:version-url
-V 44
-/cml/!svn/ver/54/trunk/front/page/people.php
+/cml/!svn/ver/55/trunk/front/page
 END
 _head.phtml
 K 25
@@ -25,13 +13,13 @@ when.phtml
 K 25
 svn:wc:ra_dav:version-url
 V 44
-/cml/!svn/ver/53/trunk/front/page/when.phtml
+/cml/!svn/ver/56/trunk/front/page/when.phtml
 END
 when.php
 K 25
 svn:wc:ra_dav:version-url
 V 42
-/cml/!svn/ver/53/trunk/front/page/when.php
+/cml/!svn/ver/56/trunk/front/page/when.php
 END
 choosy.phtml
 K 25
@@ -104,4 +92,16 @@ K 25
 svn:wc:ra_dav:version-url
 V 45
 /cml/!svn/ver/2/trunk/front/page/training.php
+END
+people.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/cml/!svn/ver/56/trunk/front/page/people.phtml
+END
+people.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/cml/!svn/ver/56/trunk/front/page/people.php
 END

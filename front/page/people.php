@@ -27,7 +27,9 @@ class Front_Page_People extends Front_Page {
 		
 		if(isset($_POST['users'])){
 			// print_r($_POST);
-			header('Location: /when?users='.$_POST['users']);
+			header('Location: /when?users='.
+				$_POST['users'].'&start='.$_POST['start'].
+				'&end='.$_POST['end']);
 		}
 		// front()
 		// 	->database()
@@ -50,34 +52,17 @@ class Front_Page_People extends Front_Page {
 		$endOfRange = date('Y-m-d 00:00:00',strtotime(
 			$startOfRange.'+'.(7-date('w',strtotime($startOfRange))).' day'));
 
-		$users = front()
-				->database()
-				->search('user')
-				->innerJoinOn('freetime','user_id=freetime_user')
-				->leftJoinOn('booked','booked_freetime=freetime_id')
-				->addFilter('booked_freetime is null')
-				->addFilter('(freetime_start between \''.$startOfRange.'\' and \''.$endOfRange.'\')'.
-					' and (freetime_end between \''.$startOfRange.'\' and \''.$endOfRange.'\')')
-				->setGroup('user_id')
-				->getRows();
+		$users = front()->user()->getList($startOfRange,$endOfRange);
+		
 		foreach ($users as $key => $user) {
-			$freetime = front()
-						->database()
-						->search('freetime')
-						->leftJoinOn('booked','booked_freetime=freetime_id')
-						->addFilter('freetime_user='.$user['user_id'])
-						->addFilter('booked_freetime is null')
-						->addFilter(
-							'(freetime_start between \''.
-								$startOfRange.'\' and \''.$endOfRange.'\')'.
-							' and (freetime_end between \''.
-								$startOfRange.'\' and \''.$endOfRange.'\')')
-						->getRows();
+			$freetime = front()->freetime()->getList($user['user_id'],$startOfRange,$endOfRange);
 			foreach ($freetime as $value) {
 				$users[$key]['freetime'][] = $value;
 			}
 		}
 		$this->_body['dateRange'] = $dateRange;
+		$this->_body['start'] = $startOfRange;
+		$this->_body['end'] = $endOfRange;
 		$this->_body['users'] = $users;
 
 		return $this->_page();

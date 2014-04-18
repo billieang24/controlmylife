@@ -383,6 +383,14 @@ class Front extends Eden {
 	public function user() {
 		return new User($this->database());
 	}
+
+	public function freetime() {
+		return new Freetime($this->database());
+	}
+
+	public function booked() {
+		return new Booked($this->database());
+	}	
 	
 	/* Protected Methods
 	-------------------------------*/

@@ -1,13 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
-V 28
-/cml/!svn/ver/2/trunk/config
-END
-pages.php
-K 25
-svn:wc:ra_dav:version-url
-V 38
-/cml/!svn/ver/2/trunk/config/pages.php
+V 29
+/cml/!svn/ver/54/trunk/config
 END
 databases.php
 K 25
@@ -20,4 +14,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 40
 /cml/!svn/ver/2/trunk/config/filters.php
+END
+pages.php
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/cml/!svn/ver/2/trunk/config/pages.php
 END
