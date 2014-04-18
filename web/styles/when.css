@@ -10,6 +10,12 @@ aside h4
 .day
 {
 	display: none;
+	margin-left: 20px;
+}
+.day span
+{
+	font-size: 15px;
+	font-weight: bold;
 }
 .when-select
 {
@@ -28,10 +34,11 @@ aside h4
 .span-day
 {
 	display: block;
+	font-size: 15px;
+	font-weight: bold;
 }
 .person-info
 {
-	color: lightblue;
 	font-size: 14px;
 	margin-top: 5px;
 }

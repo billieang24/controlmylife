@@ -1,10 +1,6 @@
 <link rel="stylesheet" type="text/css" media="screen" href="/styles/when.css" />
 <script type="text/javascript" src="/scripts/when.js"></script>
 
-<!--<header>
-		<div class="control"><h2>Control My Life<button class="btn">My Schedule</button></h2>
-		</div>
-	</header> -->
 <div class="clearfix">
 	<aside>
 		<div class="clearfix">
@@ -15,7 +11,7 @@
 			<?php foreach ($users as $user): ?>
 			<div class="info">
 				<img class="image" src="images\<?php //echo $user['user_image']; ?>">
-				<p class="person-info"><?php echo $user['user_name']; ?></p>
+				<p class="person-info"><a href="#"><?php echo $user['user_name']; ?></a></p>
 				<p class="time-people">
 					<?php 
 						if(isset($user['freetime'])){

@@ -43,4 +43,20 @@ jQuery(function($) {
 			$(string).css({'height':'340','overflow-y':'auto'});
 		}
 	}
+	$(document).ready(function(){
+		if($('.whole-people').children().length==0)
+			$('.whole-people').append('<h4>No one is free on this week.</h4>');
+		if($('.user-list').children().length==0)
+			$('.user-list').append('<h4>No one is free on this week.</h4>');	
+	});
+	$(document).on('click','.hangout-people',function(e){
+		if($('.whole-people').children().length==0)
+			$('.whole-people').append('<h4>No one is free on this week.</h4>');
+		else
+			$('.whole-people').find('h4').remove();
+		if($('.user-list').children().length==0)
+			$('.user-list').append('<h4>No one is free on this week.</h4>');
+		else
+			$('.user-list').find('h4').remove();
+	});
 });
