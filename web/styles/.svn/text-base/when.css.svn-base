@@ -1,0 +1,87 @@
+aside
+{
+	float:left;
+	width:30%;
+}
+aside h4
+{
+	float: left;
+}
+.day
+{
+	display: none;
+}
+.when-select
+{
+	display: block;
+	margin: 20px 0px;
+}
+.somewhat
+{
+	height: 370px;
+	overflow: hidden;
+}
+.view-more
+{
+	float: right;
+}
+.span-day
+{
+	display: block;
+}
+.person-info
+{
+	color: lightblue;
+	font-size: 14px;
+	margin-top: 5px;
+}
+.time-people
+{
+	font-size: 14px;
+	font-style: italic;
+}
+
+.info 
+{
+	border:1px solid #a8a8a8;
+	height: 110px;
+	margin:10px 10px 10px 0px;
+	padding:12px 10px;
+
+}
+
+.image {
+	float: left;
+	height: 85px;
+	margin-right: 10px;
+	width: 80px;
+	
+}
+
+.clearfix:after 
+{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+
+.main
+{
+	margin: 0px 35px 0px 303px;
+}
+input[type="radio"]
+{
+	margin-top:15px;
+}
+.bookIt{
+	margin-top:30px;
+
+}
+.out{
+	float: left;
+	margin-top: 50px;
+}

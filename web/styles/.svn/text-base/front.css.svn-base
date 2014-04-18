@@ -1,0 +1,52 @@
+/* HTML FIXES
+-------------------------------------------------------------------------------*/
+html, body {
+	font-family: 'open_sansregular', sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color : #434343;
+}
+
+a, a:link, a:visited { color: #3b5998; }
+a:hover { color: #3b5998; text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Open Sans', "Trebuchet MS", Arial;
+	font-weight: bold;
+	margin: 0;
+}
+
+input, button { font-family: 'Open Sans', Geneva, sans-serif; outline:none; }
+
+p { line-height: 22px; }
+
+.clear { clear: both; }
+.block { display: block; }
+
+/* HEAD
+-------------------------------------------------------------------------------*/
+.head {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAqCAMAAABFoMFOAAAAWlBMVEVOaaJDYJxCX5xBXptIZJ9MZ6E/XJpFYZ1KZqA9W5lGYp5HY55MaKFJZZ9LZqBEYZ1NaaJNaKJNaKFAXZtAXZpLZ6E+XJo+W5lJZaA9Wpk8Wpk8Wpg8WZg7WZj2xcGWAAAANElEQVR42lWGSQoAIBDDHCjo0f8/UxBxQDQuFwlpqgBZBq6+P+unVY1GnDgwqbD2zGz5e1lBdwvGGPE6OgAAAABJRU5ErkJggg==);
+}
+
+.head h1 a,
+.head h1 a:hover { display: block; margin: -4px 0 0 10px; padding: 0 0 2px 0; }
+
+.head .wrapper { margin: auto; height: 43px; width: 960px; }
+.head .logo { float: left; width: 160px; margin-top: 3px; }
+.head button { float: right; background: #41BB57; margin: 5px 13px; }
+.head button, { color: #ddd; }
+.head button:hover { color: #aaa; }
+
+/* HOME
+-------------------------------------------------------------------------------*/
+.home .body { margin: auto; width: 960px; padding: 30px 20px; }
+.home .body .well { font-size: 30px; margin-top: 20px; padding: 30px; text-align: center; }
+.home .body .well p { margin-bottom: 30px; }
+.home .body .well .btn { font-size: 30px; padding: 20px 100px; }
+.home .body > a { font-size: 30px; padding: 20px 100px; width: 100%; }
+
+
+/* GLOBAL STYLING
+----------------------------------------------------------------------------__*/
+.notice div { color: #3388dd; }

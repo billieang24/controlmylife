@@ -1,0 +1,44 @@
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/choosy.css" />
+<script type="text/javascript" src="/scripts/choosy.js"></script>
+
+<section class="notice">
+	<?php foreach ($notices as $notice_key => $notice): ?>
+	<div class="alert alert-dismissable bg-<?php echo $notice['type'] . ' notice-' . $notice_key; ?>">
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<?php echo $notice['value']; ?>
+	</div>
+	<?php endforeach; ?>
+</section>
+
+<h5>1. Choose People</h5>
+<div class="row">
+	<div class="col-md-8">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">My Friends</a></li>
+			<li><a href="#">Random People</a></li>
+		</ul>
+	</div>
+	<div class="col-md-4">
+		<select class="form-control">
+			<option>This Week</option>
+			<option>This Month</option>
+			<option>This Year</option>
+		</select>
+	</div>
+</div>
+<div class="row">
+	<?php foreach ($users as $user): ?>
+	<div class="col-md-4">
+		<div class="user-info">
+			<div class="user-left container">
+				<img class="img-thumbnail" src="<?php echo $user['img']; ?>" alt= "User image"/>
+			</div>
+			<div class="user-right container">
+				<strong class="block user-name"><?php echo $user['name']; ?></strong>
+				<em class="block time"><?php echo $user['time']; ?></em>
+				<button type="button" class="btn btn-primary btn-hangout">Let's Hang out</button>
+			</div>
+		</div>
+	</div>
+	<?php endforeach; ?>
+</div>

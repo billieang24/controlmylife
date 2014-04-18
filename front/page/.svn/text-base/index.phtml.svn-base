@@ -1,0 +1,25 @@
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles/index.css" />
+
+<div class="block">
+	<center>
+		<span>No Plans on Thursday, but don't know who is free ?</span>
+	</center>
+	<center>
+		<div class="but">
+			<a href="/calendar">
+				<img class="firstpic" src="images/fb.png" alt="img" height="90" width="90">
+				<button class="first">Control My Life !</button>
+			</a>
+		</div>
+	</center>
+	<center><a class="link" href="">Terms and Conditions</a></center>
+</div>
+<center>
+	<a href="/people">
+		<button class="second">
+			<img src="images/fb.png" alt="img" height="30" width="30"> 
+			Or Control Someone Else's Life...
+		</button>
+	</a>
+<center>
+<center><a class="link" href="">Terms and Conditions</a></center>

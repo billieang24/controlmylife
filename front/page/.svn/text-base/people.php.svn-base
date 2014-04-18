@@ -1,0 +1,63 @@
+<?php //-->
+/*
+ * This file is part a custom application package.
+ */
+
+/**
+ * Default logic to output a page
+ */
+class Front_Page_People extends Front_Page {
+	/* Constants
+	-------------------------------*/
+	/* Public Properties
+	-------------------------------*/
+	/* Protected Properties
+	-------------------------------*/
+	protected $_title = 'Eden';
+	protected $_class = 'home';
+	protected $_template = '/people.phtml';
+	
+	/* Private Properties
+	-------------------------------*/
+	/* Magic
+	-------------------------------*/
+	/* Public Methods
+	-------------------------------*/
+	public function render() {
+		if($_POST){
+			print_r($_POST);
+		}
+		$x = new DateTime(date('Y-m-d H:i:s'));
+		$x->modify('+'.(6-date('w')).' day');
+		$x = $x->format('Y-m-d H:i:s');
+		echo $x;
+		$users = front()
+				->database()
+				->search('user')
+				->innerJoinOn('freetime','user_id=freetime_user')
+				->addFilter('(freetime_start between '.date('Y-m-d H:i:s').' and '.$x.')')
+					//' and (freetime_end between '.date('Y-m-d H:i:s').' and '.$x.')')
+				->setGroup('user_id')
+				->getRows();
+		print_r($users);
+		foreach ($users as $key => $user) {
+			$freetime = front()
+						->database()
+						->search('user')
+						->innerJoinOn('freetime','user_id=freetime_user')
+						->filterByFreetimeUser($user['user_id'])
+						->getRows();
+			foreach ($freetime as $value) {
+					$users[$key]['freetime'][] = $value;
+			}
+		}
+		$this->_body['users'] = $users;
+
+		return $this->_page();
+	}
+	
+	/* Protected Methods
+	-------------------------------*/
+	/* Private Methods
+	-------------------------------*/
+}

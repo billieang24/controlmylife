@@ -1,0 +1,61 @@
+a.link{
+color: #71BCC0;
+}
+
+
+button.first {
+background: #66CC99;
+color: #FFFFFF;
+width: 320px;
+height: 68px;
+margin: 40px 0px 5px -5px;
+position: relative;
+padding: 10px 40px;
+border: solid #66CC99;
+font-size: 25px;
+font-family: sans-serif;
+position:relative;
+top:3px;
+z-index: 1;
+text-align: left;
+}
+
+button.second {
+background: #9966FF;
+color: #FFFFFF;
+width: 895px;
+height: 75px;
+margin: 10px;
+padding: 20px 20px;
+border: solid #9966FF;
+font-size: 20px;
+}
+
+div.block{
+	border-radius: 4px;
+	border: solid #F0F0F0 ;
+	background: #F0F0F0;
+	margin: 10px;
+	padding: 50px 50px 10px 50px;
+}
+
+div.but{
+	padding: 10px;
+}
+
+h4{
+font-size: 25px;
+font-weight: 200;
+margin: 0;
+}
+
+img.firstpic{
+position: relative;
+z-index: 2;
+left: 10px;
+}
+
+span{
+font-size: 20px;
+font-weight: lighter;
+}

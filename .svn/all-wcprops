@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 22
+/cml/!svn/ver/53/trunk
+END
+index.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/cml/!svn/ver/9/trunk/index.phtml
+END
+front.php
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/cml/!svn/ver/2/trunk/front.php
+END
+eden.php
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/cml/!svn/ver/3/trunk/eden.php
+END
+sftp-config.json
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/cml/!svn/ver/20/trunk/sftp-config.json
+END
+assets.php
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/cml/!svn/ver/2/trunk/assets.php
+END

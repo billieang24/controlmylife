@@ -1,0 +1,12 @@
+<div class="well">
+<<<<<<< .mine
+	<p>No Plans <?php echo date('Y l'); ?>, but don't know who is free ?</p>
+    
+=======
+	<p>No Plans <?php echo date('y l'); ?>, but don't know who is free ?</p>
+    <h3>ram</h3>
+>>>>>>> .r8
+    <a class="btn btn-primary">Control My Life!</a>
+</div>
+
+<a class="btn btn-default">&hellip; or Control Someone Else's Life &hellip;</a>

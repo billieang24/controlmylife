@@ -1,0 +1,90 @@
+.user-list
+{
+	margin: 0px 20px;
+}
+.whole-people
+{
+	margin: 0px 20px;
+}
+.clearfix:after
+{
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0px;
+	visibility: hidden;
+}
+.upper-div-text
+{
+	background-color: lightblue;
+	font-size: 15px;
+	height: 40px;
+	margin-bottom: 25px;
+	padding: 10px 50px;
+}
+.glysize
+{
+	cursor: pointer;
+}
+.select-date
+{
+	height: 35px;
+	width: 150px;
+}
+.try
+{
+	border-right: 2px solid #555;
+	margin-right: 20px;
+	padding-right: 20px;
+}
+.float-left
+{
+	float: left;
+}
+.float-right
+{
+	float: right;
+}
+.select
+{
+	height: 50px;
+	padding: 10px 50px;
+}
+.people-info
+{
+	border: 1px solid black;
+	float: left;
+	height: 150px;
+	margin: 20px 10px 0px;
+	width: 31%;
+}
+.img-people
+{
+	border: 1px solid;
+	float: left;
+	height: 85px;
+	margin: 25px 20px;
+	width: 80px;
+}
+.name-people
+{
+	color: lightblue;
+	font-size: 14px;
+	margin: 25px 0px 0px !important;
+}
+.time-people
+{
+	font-size: 14px;
+	font-style: italic;
+	margin-bottom: 0px !important;
+}
+.hangout-people
+{
+	height: 40px;
+}
+.btn-next-people
+{
+	font-size: 20px;
+	margin: 30px 50px 0px;
+	width: 100px;
+}

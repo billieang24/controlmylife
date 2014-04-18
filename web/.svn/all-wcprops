@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/cml/!svn/ver/53/trunk/web
+END
+assets.php
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/cml/!svn/ver/2/trunk/web/assets.php
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/cml/!svn/ver/2/trunk/web/.htaccess
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/cml/!svn/ver/15/trunk/web/index.php
+END
+front.php
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/cml/!svn/ver/2/trunk/web/front.php
+END

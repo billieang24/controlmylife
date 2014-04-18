@@ -1,0 +1,43 @@
+<link rel="stylesheet" type="text/css" media="screen" href="/styles/when.css" />
+<script type="text/javascript" src="/scripts/when.js"></script>
+
+<!--<header>
+		<div class="control"><h2>Control My Life<button class="btn">My Schedule</button></h2>
+		</div>
+	</header> -->
+<div class="clearfix">
+	<aside>
+		<div class="clearfix">
+			<h4>Hanging Out With</h4>
+			<a href="#" class="view-more">View More</a>
+		</div>
+		<div class="clearfix somewhat">	
+			<?php foreach ($users as $user): ?>
+			<div class="info">
+				<img class="image" src="images\<?php echo $user['user_image']; ?>">
+				<p class="person-info"><?php echo $user['user_name']; ?></p>
+				<p class="time-people"><?php echo $user['user_free_time']; ?></p>
+			</div>
+			<?php endforeach;?>
+		</div>
+	</aside>
+
+	<section class="main">
+		<h3>2. Choose When</h3>
+		<?php foreach ($free_times as $key=> $free_day):?>
+		<br/>
+		<span class="span-day <?php echo $key;?>"><a class="a-day" href="#"><?php echo $key;?></a></span>
+		<div class="<?php echo $key;?> day">
+			<?php foreach ($free_day as $free_time): ?>
+			<input type="radio" name="when" value="<?php echo $free_time;?>"/>
+			<span> <?php echo $free_time;?></span>
+			<br/>
+			<?php endforeach;?>
+		</div>
+		<?php endforeach;?>
+		<br/>
+		<a href="/where"><button class="bookIt btn btn-warning">Book It!                    
+		<span class="glyphicon glyphicon-book"></span></button></a>
+		<!-- <div class="out"><?php echo $when;?></div> -->
+	</section>
+</div>
