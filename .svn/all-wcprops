@@ -1,13 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 22
-/cml/!svn/ver/55/trunk
-END
-eden.php
-K 25
-svn:wc:ra_dav:version-url
-V 30
-/cml/!svn/ver/3/trunk/eden.php
+/cml/!svn/ver/56/trunk
 END
 sftp-config.json
 K 25
@@ -21,6 +15,12 @@ svn:wc:ra_dav:version-url
 V 32
 /cml/!svn/ver/2/trunk/assets.php
 END
+cml.sql
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/cml/!svn/ver/57/trunk/cml.sql
+END
 index.phtml
 K 25
 svn:wc:ra_dav:version-url
@@ -32,4 +32,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 32
 /cml/!svn/ver/56/trunk/front.php
+END
+eden.php
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/cml/!svn/ver/3/trunk/eden.php
 END

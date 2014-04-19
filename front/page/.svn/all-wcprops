@@ -1,7 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 33
-/cml/!svn/ver/55/trunk/front/page
+/cml/!svn/ver/56/trunk/front/page
+END
+people.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/cml/!svn/ver/56/trunk/front/page/people.php
 END
 _head.phtml
 K 25
@@ -15,17 +21,17 @@ svn:wc:ra_dav:version-url
 V 44
 /cml/!svn/ver/56/trunk/front/page/when.phtml
 END
-when.php
-K 25
-svn:wc:ra_dav:version-url
-V 42
-/cml/!svn/ver/56/trunk/front/page/when.php
-END
 choosy.phtml
 K 25
 svn:wc:ra_dav:version-url
 V 46
 /cml/!svn/ver/38/trunk/front/page/choosy.phtml
+END
+when.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/cml/!svn/ver/56/trunk/front/page/when.php
 END
 _foot.phtml
 K 25
@@ -33,17 +39,17 @@ svn:wc:ra_dav:version-url
 V 44
 /cml/!svn/ver/2/trunk/front/page/_foot.phtml
 END
-choosy.php
-K 25
-svn:wc:ra_dav:version-url
-V 44
-/cml/!svn/ver/38/trunk/front/page/choosy.php
-END
 index.phtml
 K 25
 svn:wc:ra_dav:version-url
 V 45
 /cml/!svn/ver/41/trunk/front/page/index.phtml
+END
+choosy.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/cml/!svn/ver/38/trunk/front/page/choosy.php
 END
 calendar.phtml
 K 25
@@ -51,29 +57,29 @@ svn:wc:ra_dav:version-url
 V 48
 /cml/!svn/ver/35/trunk/front/page/calendar.phtml
 END
-index.php
-K 25
-svn:wc:ra_dav:version-url
-V 43
-/cml/!svn/ver/11/trunk/front/page/index.php
-END
 where.phtml
 K 25
 svn:wc:ra_dav:version-url
 V 45
 /cml/!svn/ver/46/trunk/front/page/where.phtml
 END
-_page.phtml
+index.php
 K 25
 svn:wc:ra_dav:version-url
-V 44
-/cml/!svn/ver/2/trunk/front/page/_page.phtml
+V 43
+/cml/!svn/ver/11/trunk/front/page/index.php
 END
 training.phtml
 K 25
 svn:wc:ra_dav:version-url
 V 47
 /cml/!svn/ver/2/trunk/front/page/training.phtml
+END
+_page.phtml
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/cml/!svn/ver/2/trunk/front/page/_page.phtml
 END
 calendar.php
 K 25
@@ -98,10 +104,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 46
 /cml/!svn/ver/56/trunk/front/page/people.phtml
-END
-people.php
-K 25
-svn:wc:ra_dav:version-url
-V 44
-/cml/!svn/ver/56/trunk/front/page/people.php
 END

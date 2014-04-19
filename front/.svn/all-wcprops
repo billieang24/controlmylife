@@ -1,7 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 28
-/cml/!svn/ver/55/trunk/front
+/cml/!svn/ver/56/trunk/front
+END
+error.php
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/cml/!svn/ver/2/trunk/front/error.php
 END
 page.php
 K 25
@@ -14,10 +20,4 @@ K 25
 svn:wc:ra_dav:version-url
 V 39
 /cml/!svn/ver/2/trunk/front/error.phtml
-END
-error.php
-K 25
-svn:wc:ra_dav:version-url
-V 37
-/cml/!svn/ver/2/trunk/front/error.php
 END
