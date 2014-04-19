@@ -2,13 +2,19 @@
 <script type="text/javascript" src="/scripts/people.js"></script>
 
 <section class="clearfix">
+	
 	<div id="upper-close" class="upper-div-text">
 		<strong>No Plans on Thursday?</strong> Hang out with your friends! They don't have any plans :)<span onclick="upperClose()" class="glyphicon glyphicon-remove float-right glysize"></span>
 	</div>
+
 	<h3>1. Choose People</h3>
 	<br>
+
 	<div class="select">
-		<h4 class="float-left try">My Friends</h4><h4 class="float-left"> <a href="#"> Random People</a></h4>
+		
+		<h4 class="float-left my-friends">My Friends</h4>
+		<h4 class="float-left random-people"> <a href="#"> Random People</a></h4>
+
 		<div class="float-right">
 			<form method="post">
 				<select class="select-date" name="date-range">
@@ -18,13 +24,17 @@
 			</form>
 		</div>
 	</div>
+	
+	<hr>
+	<h4 class="h4-choose">Choose from:</h4>
+	
 	<div class="whole-people clearfix">
-		<p>Choose from:</p>
 		<?php foreach ($users as $user): ?>
 			<div id="" class="people-info">
 				<img class="img-people" src="<?php echo 'https://scontent-b-lax.xx.fbcdn.net/hphotos-prn2/l/t1.0-9/1382273_556640624407879_1732563799_n.jpg'; ?>">
 				<p class="name-people"><a href="<?php //echo $user['user_url'];?>"><?php echo $user['user_name']; ?></a></p>
-				<p class="time-people">
+				
+				<p id="time-people" class="time-people">
 					<?php if(isset($user['freetime'])){
 						foreach ($user['freetime'] as $value){
 							echo $value['freetime_start'].' to '.$value['freetime_end'].'<br/>';
@@ -36,13 +46,17 @@
 			</div>
 		<?php endforeach;?>
 	</div>
-	<div class="user-list clearfix">
-		<p>Hang out with:</p>
+
+	<h4 class="h4-hang">Hang out with:</h4>
+	<div class="user-list clearfix">	
+	
 	</div>
-	<form method="post">
+
+	<form id="form" method="post">
 		<input type="hidden" name="start" value="<?php echo $start?>"></input>
 		<input type="hidden" name="end" value="<?php echo $end?>"></input>
 		<input type="hidden" name="users" value=""></input>
 		<button type="submit" class="btn btn-warning float-right btn-next-people">Next   <span class="glyphicon glyphicon-circle-arrow-right"></span></button>
 	</form>
+
 </section>

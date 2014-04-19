@@ -3,48 +3,6 @@ svn:wc:ra_dav:version-url
 V 33
 /cml/!svn/ver/53/trunk/web/styles
 END
-awesome.css
-K 25
-svn:wc:ra_dav:version-url
-V 44
-/cml/!svn/ver/2/trunk/web/styles/awesome.css
-END
-when.css
-K 25
-svn:wc:ra_dav:version-url
-V 42
-/cml/!svn/ver/53/trunk/web/styles/when.css
-END
-theme.css
-K 25
-svn:wc:ra_dav:version-url
-V 42
-/cml/!svn/ver/2/trunk/web/styles/theme.css
-END
-people.css
-K 25
-svn:wc:ra_dav:version-url
-V 44
-/cml/!svn/ver/51/trunk/web/styles/people.css
-END
-choosy.css
-K 25
-svn:wc:ra_dav:version-url
-V 44
-/cml/!svn/ver/39/trunk/web/styles/choosy.css
-END
-index.css
-K 25
-svn:wc:ra_dav:version-url
-V 43
-/cml/!svn/ver/36/trunk/web/styles/index.css
-END
-front.css
-K 25
-svn:wc:ra_dav:version-url
-V 43
-/cml/!svn/ver/39/trunk/web/styles/front.css
-END
 fonts.css
 K 25
 svn:wc:ra_dav:version-url
@@ -74,4 +32,46 @@ K 25
 svn:wc:ra_dav:version-url
 V 46
 /cml/!svn/ver/2/trunk/web/styles/bootstrap.css
+END
+awesome.css
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/cml/!svn/ver/2/trunk/web/styles/awesome.css
+END
+when.css
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/cml/!svn/ver/58/trunk/web/styles/when.css
+END
+theme.css
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/cml/!svn/ver/2/trunk/web/styles/theme.css
+END
+people.css
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/cml/!svn/ver/58/trunk/web/styles/people.css
+END
+choosy.css
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/cml/!svn/ver/39/trunk/web/styles/choosy.css
+END
+index.css
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/cml/!svn/ver/36/trunk/web/styles/index.css
+END
+front.css
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/cml/!svn/ver/39/trunk/web/styles/front.css
 END
